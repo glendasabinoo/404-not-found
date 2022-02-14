@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+* {
+    font-family: 'Space Mono', monospace;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+header {
+    padding:20px 24px;
+}
+@media screen and (min-width:950px) {
+    header {
+        padding: 40px 77px;
+    }
+}
+.container-main__img {
+    margin: 62px 44px;
+    max-width: 540px;
+    height:100%;
+}
+.container-main {
+    padding-left: 24px;
+    min-height:calc(100vh - 73px - 66px)
+}
+@media screen and (min-width:650px){
+    .container-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container-main__img {
+        margin: 0;
+        flex-basis: 42%;
+    }
+    .container-main__texts {
+        flex-basis: 45%
+    }
+}
+@media screen and (min-width:950px) {
+    .container-main {
+        padding-left:77px;
+    }
+    .container-main__img {
+        flex-basis:38%;
+    }
+}
+.container-main__texts h1 {
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight:bold;
+    letter-spacing: -0.035em;
+    max-width:568px;
+}
+@media screen and (min-width:950px){
+    .container-main__texts h1 {
+		font-size: 64px;
+    }
+}
+.container-main__texts p {
+    font-size: 18px;
+	font-weight: 400;
+	letter-spacing: -0.035em;
+	color: var(--light-gray);
+	margin-bottom: 64px;
+}
+@media screen and (min-width: 950px){
+    .container-main__texts p {
+        max-width: 380px;
+		font-size: 24px;
+    }
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightgray;
+    flex: 1;
+    }
+.footer__name {
+	font-weight: 700;
+	text-decoration: underline;
+    text-align: center;
+}
+.footer__page-reference {
+	font-weight: 500;
+    text-align: center;
+}
